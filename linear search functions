@@ -1,0 +1,13 @@
+def my_function(arr,target):
+    for i in range(len(arr)):
+        if arr[i]==target:
+            return i
+    else:
+        return -1
+arr=[3,7,2,75,834]
+target=98765
+result=my_function(arr,target)
+if result==-1:
+    print("element not found")
+else:
+    print("found =",result)
