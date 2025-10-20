@@ -1,0 +1,20 @@
+def my_function(arr,target):
+    low=0
+    high=len(arr)-1
+    while low<=high:
+        mid=(low+high)//2
+        if arr[mid]==target:
+            return mid
+            break
+        elif target>arr[mid]:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+arr=[3,5,7,9,11]
+target=78765
+result=my_function(arr,target)
+if result==-1:
+    print("element not found")
+else:
+    print("found =",result)
