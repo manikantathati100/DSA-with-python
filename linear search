@@ -1,0 +1,10 @@
+arr=[3,7,2,75,834]
+target=2
+found=False
+for i in range(len(arr)):
+    if arr[i]==target:
+        found=True
+        print("found =",i)
+        break
+if found==False:
+    print("element not found")
